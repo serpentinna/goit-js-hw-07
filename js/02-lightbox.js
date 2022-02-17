@@ -22,18 +22,6 @@ function createGalleryMarkup(items) {
 
 // var lightbox = new SimpleLightbox('.gallery a');
 
-const gallery = new SimpleLightbox('.gallery a');
-gallery.on('next.simplelightbox', () => {
-  
-    const caption = {        
-        captionsData: `${alt}`,
-        captionPosition: 'bottom',
-        captionDelay: 250,
-    
-};
- 
-    return caption;
-     
-});
+const gallery = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: 250, captionPosition: 'bottom',});
 
 
